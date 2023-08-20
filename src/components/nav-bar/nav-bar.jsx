@@ -1,4 +1,4 @@
-import screenWidth from '../utils/Utils.jsx'
+import screenWidth from '../utils/Utils.jsx';
 import ToggleMenu from './ToggleMenu.jsx';
 
 import Icon from '@mdi/react';
@@ -13,7 +13,7 @@ function NavBar(){
 
     if(width <= 768){
         return (
-            <div className="flex flex-col items-center justify-around my-10 w-full">
+            <div className="flex flex-col items-center justify-around mt-8 mb-3 w-full">
                 <div className="flex space-x-2 item-center justify-center w-1/5 my-2">
                     <div>
                         <Icon path={mdiStorefront} size={1} />
@@ -22,10 +22,10 @@ function NavBar(){
                 </div>
                 <div className="flex space-x-2 items-center justify-center w-1/5">
                     <div>
-                        <Icon path={mdiAccount} size={1} />
+                        <Icon path={mdiMagnify} size={1} />
                     </div>
                     <div>
-                        <Icon path={mdiMagnify} size={1} />
+                        <Icon path={mdiAccount} size={1} />
                     </div>
                     <div>
                         <Icon path={mdiCartOutline} size={1} />
@@ -38,7 +38,7 @@ function NavBar(){
     }
 
     return (
-        <div className="flex items-center justify-around my-10 w-full">
+        <div className="flex items-center justify-around my-8 w-full">
             <div className="flex space-x-2 item-center justify-center w-1/5">
                 <div>
                     <Icon path={mdiStorefront} size={1} />
@@ -53,10 +53,10 @@ function NavBar(){
             </div>
             <div className="flex space-x-2 items-center justify-center w-1/5">
                 <div>
-                    <Icon path={mdiAccount} size={1} />
+                    <Icon path={mdiMagnify} size={1} />
                 </div>
                 <div>
-                    <Icon path={mdiMagnify} size={1} />
+                    <Icon path={mdiAccount} size={1} />
                 </div>
                 <div>
                     <Icon path={mdiCartOutline} size={1} />
