@@ -7,13 +7,15 @@ import { mdiCartOutline } from '@mdi/js';
 import { mdiMagnify } from '@mdi/js';
 import { mdiStorefront } from '@mdi/js';
 
+import { Link } from "react-router-dom";
+
 function NavBar(){
 
     let width = screenWidth();
 
     if(width <= 768){
         return (
-            <div className="flex flex-col items-center justify-around mt-8 mb-3 w-full">
+            <div className="flex flex-col items-center justify-around mt-3 mb-2 w-full">
                 <div className="flex space-x-2 item-center justify-center w-1/5 my-2">
                     <div>
                         <Icon path={mdiStorefront} size={1} />
@@ -46,9 +48,9 @@ function NavBar(){
                 <h1>Dreamweaver</h1>
             </div>
             <div className="flex desktop:space-x-8 laptop:space-x-6 tablet:space-x-4 items-center">
-                <a href="">HOME</a>
+                <Link to='/'>HOME</Link>
                 <a href="">ABOUT US</a>
-                <a href="">SHOP</a>
+                <Link to="shop">SHOP</Link>
                 <a href="">COLLECTION</a>
             </div>
             <div className="flex space-x-2 items-center justify-center w-1/5">

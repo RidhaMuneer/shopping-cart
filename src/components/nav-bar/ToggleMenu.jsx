@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 import Icon from '@mdi/react';
 import { mdiMenu } from '@mdi/js';
@@ -18,9 +19,9 @@ function ToggleMenu() {
             </button>
             {menuOpen && (
                 <div className="fixed top-0 left-0 w-screen h-screen bg-white flex flex-col items-center justify-center">
-                    <a href="" className="text-2xl mb-4">HOME</a>
+                    <Link to='/' className="text-2xl mb-4">HOME</Link>
                     <a href="" className="text-2xl mb-4">ABOUT US</a>
-                    <a href="" className="text-2xl mb-4">SHOP</a>
+                    <Link to='shop' className="text-2xl mb-4">SHOP</Link>
                     <a href="" className="text-2xl mb-4">COLLECTION</a>
                 </div>
             )}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import screenWidth from '../utils/Utils.jsx';
 import heroImage from './hero.png';
 
@@ -14,7 +15,9 @@ function HeroSection(){
                     <p className='text-lg'>Enjoy an easy shopping experience</p>
                 </div>
                 <div>
-                    <button className='bg-purple-500 bg-opacity-75 px-6 py-2 rounded'>SHOP NOW</button>
+                    <button className='bg-purple-500 bg-opacity-75 px-6 py-2 rounded'>
+                        <Link to='/shop'>SHOP NOW</Link>
+                    </button>
                 </div>
             </div>
             <div>
@@ -32,7 +35,9 @@ function HeroSection(){
                     <p className='text-lg'>Enjoy an easy shopping experience</p>
                 </div>
                 <div>
-                    <button className='bg-purple-500 bg-opacity-75 px-6 py-2 rounded'>SHOP NOW</button>
+                    <button className='bg-purple-500 bg-opacity-75 px-6 py-2 rounded'>
+                        <Link to='/shop'>SHOP NOW</Link>
+                    </button>
                 </div>
             </div>
             <div>
