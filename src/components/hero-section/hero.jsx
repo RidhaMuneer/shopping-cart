@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import screenWidth from '../utils/Utils.jsx';
 import './hero-background.css';
-import heroImage from '../../../public/hero.png';
+import heroImage from '/hero.png';
 
 function HeroSection(){
 
