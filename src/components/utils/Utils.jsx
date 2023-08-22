@@ -18,4 +18,22 @@ function ScreenSize() {
     return screenWidth;
 }
 
+export function reduceTo20Words(inputString) {
+    const words = inputString.trim().split(/\s+/); // Split the string into words
+    const reducedWords = words.slice(0, 20); // Take the first 20 words
+    const reducedString = reducedWords.join(' '); // Join the words back into a string
+    
+    return reducedString;
+}
+
+export function reduceTo5Words(inputString) {
+    const words = inputString.trim().split(/\s+/); // Split the string into words
+    const reducedWords = words.slice(0, 5); // Take the first 20 words
+    const reducedString = reducedWords.join(' '); // Join the words back into a string
+    
+    return reducedString;
+}
+
+
+
 export default ScreenSize;
