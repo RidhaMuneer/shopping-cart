@@ -12,7 +12,7 @@ function HeroSection(){
         <div className='flex flex-col items-center justify-evenly gap-20 py-24 custom-bg'>
             <div className='flex flex-col gap-10'>
                 <div className='flex flex-col gap-2'>
-                    <h1 className='text-3xl'>Your Path To Beauty</h1>
+                    <h1 className='text-3xl'>Your Path To Everything</h1>
                     <p className='text-lg'>Enjoy an easy shopping experience</p>
                 </div>
                 <div>
