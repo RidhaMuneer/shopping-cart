@@ -49,9 +49,8 @@ function NavBar(){
             </div>
             <div className="flex desktop:space-x-8 laptop:space-x-6 tablet:space-x-4 items-center">
                 <Link to='/'>HOME</Link>
-                <a href="">ABOUT US</a>
-                <Link to="shop">SHOP</Link>
-                <a href="">COLLECTION</a>
+                <Link to="/shop">SHOP</Link>
+                <Link to='/aboutus'>ABOUT US</Link>
             </div>
             <div className="flex space-x-2 items-center justify-center w-1/5">
                 <div>

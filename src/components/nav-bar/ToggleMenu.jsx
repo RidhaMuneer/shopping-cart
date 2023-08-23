@@ -20,9 +20,8 @@ function ToggleMenu() {
             {menuOpen && (
                 <div className="fixed top-0 left-0 w-screen h-screen bg-white flex flex-col items-center justify-center">
                     <Link to='/' className="text-2xl mb-4">HOME</Link>
-                    <a href="" className="text-2xl mb-4">ABOUT US</a>
-                    <Link to='shop' className="text-2xl mb-4">SHOP</Link>
-                    <a href="" className="text-2xl mb-4">COLLECTION</a>
+                    <Link to='/shop' className="text-2xl mb-4">SHOP</Link>
+                    <Link to='/aboutus' className="text-2xl mb-4">ABOUT US</Link>
                 </div>
             )}
         </div>

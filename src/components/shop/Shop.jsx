@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 
 function Shop() {
 
-    const [items, setItems] = useState([{id: 124215, title: 'item1', description: 'This item is good', price: 0.00}]);
+    const [items, setItems] = useState([]);
 
     const fetchingData = async () => {
         const response = await fetchData();
