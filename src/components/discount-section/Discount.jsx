@@ -22,7 +22,7 @@ function Discount(){
             <div className="flex items-center justify-baseline pt-5 gap-1">
                 <p className="text-lg">%10 DISCOUNT</p>
             </div>
-            <div className="flex flex-wrap justify-center gap-10 p-10">
+            <div className="flex flex-wrap justify-center gap-10 p-10 w-full">
                 {items.map((obj) => (
                     <ItemCardDiscount key={obj.id} title={obj.title} description={obj.description} image={obj.image} price={obj.price} newPrice={Math.floor(obj.price * discount, 2)}/>
                 ))}
