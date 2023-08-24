@@ -1,5 +1,7 @@
 import screenWidth from '../utils/Utils.jsx';
 import ToggleMenu from './ToggleMenu.jsx';
+import ShoppingCart from '../shop/ShoppingCart.jsx';
+import React, { useState } from 'react';
 
 import Icon from '@mdi/react';
 import { mdiAccount } from '@mdi/js';
@@ -10,6 +12,12 @@ import { mdiStorefront } from '@mdi/js';
 import { Link } from "react-router-dom";
 
 function NavBar(){
+
+    const [cart, setCartOpen] = useState(false);
+
+    const goToCart = () => {
+        setCartOpen(!cart);
+    }
 
     let width = screenWidth();
 
@@ -24,16 +32,25 @@ function NavBar(){
                 </div>
                 <div className="flex space-x-2 items-center justify-center w-1/5">
                     <div>
-                        <Icon path={mdiMagnify} size={1} />
+                        <button>
+                            <Icon path={mdiMagnify} size={1} />
+                        </button>
                     </div>
                     <div>
-                        <Icon path={mdiAccount} size={1} />
+                        <button>
+                            <Icon path={mdiAccount} size={1} />
+                        </button>
                     </div>
                     <div>
-                        <Icon path={mdiCartOutline} size={1} />
+                        <button onClick={goToCart}>
+                            <Icon path={mdiCartOutline} size={1} />
+                        </button>
                     </div>
                     <p>$0.00</p>
                     <ToggleMenu></ToggleMenu>
+                    {cart && (
+                        <ShoppingCart></ShoppingCart>
+                    )}
                 </div>
             </div>
         );
@@ -54,15 +71,24 @@ function NavBar(){
             </div>
             <div className="flex space-x-2 items-center justify-center w-1/5">
                 <div>
-                    <Icon path={mdiMagnify} size={1} />
+                    <button>
+                        <Icon path={mdiMagnify} size={1} />
+                    </button>
                 </div>
                 <div>
-                    <Icon path={mdiAccount} size={1} />
+                    <button>
+                        <Icon path={mdiAccount} size={1} />
+                    </button>
                 </div>
                 <div>
-                    <Icon path={mdiCartOutline} size={1} />
+                    <button onClick={goToCart}>
+                        <Icon path={mdiCartOutline} size={1} />
+                    </button>
                 </div>
                 <p>$0.00</p>
+                {cart && (
+                        <ShoppingCart></ShoppingCart>
+                )}
             </div>
         </div>
     );
