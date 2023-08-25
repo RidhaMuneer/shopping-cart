@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
 import { ItemContext } from '../context/ItemProvider';
 import { reduceTo5Words } from '../utils/Utils';
+import { PriceContext } from '../context/PriceProvider.jsx';
 
 import Icon from '@mdi/react';
 import { mdiCloseThick } from '@mdi/js';
@@ -12,10 +13,13 @@ function ShoppingCart() {
 
     const [ total, setTotal] = useState(0);
 
+    const { updatePrice } = useContext(PriceContext);
+
     const calculateTotal = () => {
         let total = 0;
         items.map(item => total += item.newPrice)
         setTotal(total);
+        updatePrice(total);
     }
 
     const handleRemove = (id) => {
