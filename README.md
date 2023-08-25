@@ -1,6 +1,5 @@
 # A Store For Everything
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![React Version](https://img.shields.io/badge/React-%5E16.0.0-blue)](https://reactjs.org/)
 [![Tailwind CSS Version](https://img.shields.io/badge/Tailwind%20CSS-%5E2.0.0-blue)](https://tailwindcss.com/)
 
