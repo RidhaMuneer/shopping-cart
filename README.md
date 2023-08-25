@@ -4,7 +4,8 @@
 [![React Version](https://img.shields.io/badge/React-%5E16.0.0-blue)](https://reactjs.org/)
 [![Tailwind CSS Version](https://img.shields.io/badge/Tailwind%20CSS-%5E2.0.0-blue)](https://tailwindcss.com/)
 
-A brief one to two paragraph description of your e-commerce app. What problem does it solve? What are its key features?
+- The project was created as a mimic of how a real-life e-commerce app works
+- The development included only the front-end engineering of the project, hence the rest depended on the FakeStoreAPI
 
 ## Table of Contents
 - [Demo](#demo)
