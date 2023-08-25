@@ -7,7 +7,7 @@ import { mdiGlobeModel } from '@mdi/js';
 function AboutUs() {
     return (
         <div>
-            <NavBar />
+            <NavBar></NavBar>
             <div className='custom py-10 px-10'>
                 <div className='container mx-auto flex justify-center'>
                     <div className='bg-white p-8 rounded-lg shadow-lg flex flex-col gap-5 items-center justify-between md:flex-row'>

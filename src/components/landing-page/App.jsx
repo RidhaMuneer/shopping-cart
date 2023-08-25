@@ -5,9 +5,9 @@ import Discount from "../discount-section/Discount.jsx";
 function App() {
   return (
     <>
-      <NavBar></NavBar>
-      <HeroSection></HeroSection>
-      <Discount></Discount>
+        <NavBar></NavBar>
+        <HeroSection></HeroSection>
+        <Discount></Discount>
     </>
   );
 }

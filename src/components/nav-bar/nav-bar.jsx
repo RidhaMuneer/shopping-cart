@@ -1,7 +1,8 @@
 import screenWidth from '../utils/Utils.jsx';
 import ToggleMenu from './ToggleMenu.jsx';
 import ShoppingCart from '../shop/ShoppingCart.jsx';
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { PriceContext } from '../context/PriceProvider.jsx';
 
 import Icon from '@mdi/react';
 import { mdiAccount } from '@mdi/js';
@@ -12,6 +13,8 @@ import { mdiStorefront } from '@mdi/js';
 import { Link } from "react-router-dom";
 
 function NavBar(){
+
+    const { price } = useContext(PriceContext);
 
     const [cart, setCartOpen] = useState(false);
 
@@ -46,7 +49,7 @@ function NavBar(){
                             <Icon path={mdiCartOutline} size={1} />
                         </button>
                     </div>
-                    <p>$0.00</p>
+                    <p className='mb-1'>${price}</p>
                     <ToggleMenu></ToggleMenu>
                     {cart && (
                         <ShoppingCart></ShoppingCart>
@@ -85,9 +88,9 @@ function NavBar(){
                         <Icon path={mdiCartOutline} size={1} />
                     </button>
                 </div>
-                <p>$0.00</p>
+                <p className='mb-1'>${price}</p>
                 {cart && (
-                        <ShoppingCart></ShoppingCart>
+                    <ShoppingCart></ShoppingCart>
                 )}
             </div>
         </div>
