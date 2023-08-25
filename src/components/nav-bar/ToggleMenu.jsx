@@ -13,7 +13,7 @@ function ToggleMenu() {
     };
 
     return (
-        <div className='mb-1'>
+        <div className='mb-0.5'>
             <button onClick={toggleMenu}>
                 <Icon path={mdiMenu} size={1.2} className='mt-1'/>
             </button>
@@ -22,6 +22,7 @@ function ToggleMenu() {
                     <Link to='/' className="text-2xl mb-4">HOME</Link>
                     <Link to='/shop' className="text-2xl mb-4">SHOP</Link>
                     <Link to='/aboutus' className="text-2xl mb-4">ABOUT US</Link>
+                    <button onClick={toggleMenu} className="text-2xl mb-4">EXIT</button>
                 </div>
             )}
         </div>

@@ -11,7 +11,7 @@ function ShoppingCart() {
     const total = cartItems.reduce((sum, item) => sum + item.price, 0);
 
     return (
-        <div className="bg-gray-800 text-black fixed top-28 md:right-72 md:w-2/5 w-4/5 bg-white rounded-lg shadow-md p-4">
+        <div className="text-black fixed top-28 md:right-72 md:w-2/5 w-4/5 bg-white rounded-lg shadow-md p-4">
             <div className="flex items-center justify-between mb-3">
                 <h2 className="text-xl font-semibold">Shopping Cart</h2>
                 <FaShoppingCart className="text-2xl" />
