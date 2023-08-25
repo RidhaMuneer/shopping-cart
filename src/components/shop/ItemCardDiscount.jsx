@@ -1,14 +1,33 @@
 import React, {useContext, useState} from 'react';
 import { reduceTo20Words, reduceTo5Words } from "../utils/Utils.jsx";
 import { PriceContext } from '../context/PriceProvider.jsx';
+import { ItemContext } from '../context/ItemProvider.jsx';
 
-function ItemCardDiscount({title, itemPrice, newPrice, description, image}) {
+function ItemCardDiscount({id, title, itemPrice, newPrice, description, image}) {
+
+    let product = {
+        id : id,
+        title: title,
+        image: image
+    }
+
+    const { items, setItems} = useContext(ItemContext);
+
+    const handleItemToCart = (newPrice, quantity) => {
+        product = {
+            ...product,
+            newPrice: newPrice,
+            quantity: quantity
+        }
+        setItems([...items, product]);
+    }
 
     const {price, updatePrice } = useContext(PriceContext);
 
     const handlePriceUpdate = () => {
         const addToTotal = Math.floor(newPrice * quantity, 4);
         updatePrice(price + addToTotal);
+        handleItemToCart(addToTotal, quantity);
         setQuantity(1);
     };
 

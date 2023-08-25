@@ -22,7 +22,7 @@ function Shop() {
             <NavBar></NavBar>
             <div className="bg-gray-200 flex flex-wrap justify-center gap-10 p-10">
                 {items.map((obj) => (
-                    <ItemCard key={obj.id} title={obj.title} description={obj.description} image={obj.image} itemPrice={obj.price}/>
+                    <ItemCard key={obj.id} id={obj.id} title={obj.title} description={obj.description} image={obj.image} itemPrice={obj.price}/>
                 ))}
             </div>
         </div>
