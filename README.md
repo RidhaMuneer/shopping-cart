@@ -27,4 +27,4 @@
 ## Usage
 
 1. Run the development server: `npm run dev`
-2. Open your browser and navigate to `http://localhost:3000`
+2. Open your browser and navigate to `http://localhost:port_number`
