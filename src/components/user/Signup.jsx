@@ -51,7 +51,7 @@ export default function Signup() {
           />
         </div>
         <div className='flex justify-center items-center gap-4'>
-        <Link to='/login'>
+        <Link to='/'>
           <p className='bg-yellow-600 bg-opacity-75 px-12 py-2 rounded text-white' onClick={handleLogin}>
             Signup
           </p>
