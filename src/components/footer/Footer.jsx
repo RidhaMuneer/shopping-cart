@@ -8,7 +8,7 @@ function Footer() {
                 <div className="mb-4 md:mb-0 md:w-1/2">
                     <h2 className="text-lg font-semibold mb-2">Contact Us</h2>
                     <p className="text-gray-300 mb-2">
-                        Email: ridhamuner@gmail.com
+                        Email: example@gmail.com
                     </p>
                     <p className="text-gray-300">
                         Address: 123 Street, City, Country

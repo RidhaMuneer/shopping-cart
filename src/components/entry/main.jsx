@@ -8,10 +8,19 @@ import AboutUs from '../about-us/AboutUs.jsx';
 import Footer from '../footer/Footer.jsx';
 import { PriceProvider } from "../context/PriceProvider.jsx";
 import { ItemProvider } from '../context/ItemProvider.jsx';
-
+import Login from '../user/Login.jsx';
+import Signup from '../user/Signup.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <Login/>,
+  },
+  {
+    path: "/signup",
+    element: <Signup/>,
+  },
+  {
+    path: "/home",
     element: <App />,
   },
   {
