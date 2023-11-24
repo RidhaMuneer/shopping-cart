@@ -68,7 +68,7 @@ function NavBar(){
                 <h1>Dreamweaver</h1>
             </div>
             <div className="flex desktop:space-x-8 laptop:space-x-6 tablet:space-x-4 items-center">
-                <Link to='/'>HOME</Link>
+                <Link to='/home'>HOME</Link>
                 <Link to="/shop">SHOP</Link>
                 <Link to='/aboutus'>ABOUT US</Link>
             </div>
